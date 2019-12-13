@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<title>Memory Game</title>
+<html>
+
+<head>
+    <script src="memory_game_6.js"></script>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        body {
+            /* Game background*/
+            background-image: url('img/q2.jpg');
+            background-repeat: no-repeat;
+            background-attachment: flex;
+            background-size: cover;
+        }
+        
+        div#memory_board {
+            background-image: url("img/q.jpg") no-repeat;
+            /* Game boarder*/
+            border: green 1px solid;
+            width: 800px;
+            height: 540px;
+            padding: 24px;
+            margin: 0px auto;
+        }
+        
+        div#memory_board>div {
+            background-image: url('img/q.jpg');
+            background-attachment: flex;
+            background-size: cover;
+            border: #000 1px solid;
+            width: 71px;
+            height: 71px;
+            float: right;
+            margin: 10px;
+            padding: 20px;
+            font-size: 64px;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1 style="color:green " ;>MEMORY GAME</h1>
+    <div id="memory_board"></div>
+
+    <script>
+        newBoard();
+    </script>
+</body>
+
+</html>
